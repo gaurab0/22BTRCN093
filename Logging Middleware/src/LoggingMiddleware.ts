@@ -54,7 +54,7 @@ export class LoggingMiddleware {
             throw new Error(`Invalid package: ${pkg}. Must be one of: ${validPackages.join(', ')}`);
         }
 
-        // Validate package based on stack
+        
         if (stackLower === 'backend' && !validBackendPackages.includes(pkgLower)) {
             throw new Error(`Invalid backend package: ${pkg}. Must be one of: ${validBackendPackages.join(', ')}`);
         }
